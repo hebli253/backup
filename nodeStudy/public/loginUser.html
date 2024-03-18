@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Login form(mysql 이용)</h2>
+    <form action="/process/loginuser" method="post">
+        <table border="1">
+            <tr height="40">
+                <td width="150" align="center"> 아이디 </td>
+                <td width="150" align="center"> 
+                    <input type="text" name="id">
+                </td>
+            </tr>
+            <tr height="40">
+                <td width="150" align="center"> 패스워드 </td>
+                <td width="150" align="center"> 
+                    <input type="text" name="password">
+                </td>
+            </tr>
+            <tr height="40">
+                <td align="center" colspan="2"> 
+                    <input type="submit"value="로그인">
+                    <input type="reset"value="취소">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

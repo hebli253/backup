@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> 1. var 연습 </h2>
+    <script>
+        var age = 20;
+        var name = 'hong';
+        var grade;
+        document.write('age :' + age + ', name :' + name + '<br>');
+        document.write(`age : ${age}, name : ${name}, grade : ${grade} <br>`); //위와 아래가 동일한 기능을 한다.
+    </script>
+
+    <h2> 2. let 연습 </h2>
+    <script>
+        let globalVar = 'hong'; //전역변수
+        {
+            let blockVar = 'dong';
+            document.write(`(block scope 외부) globalVar : ${globalVar} , (block scope 내부) blockVar : ${blockVar} <br>`);
+        } 
+        document.write(`(block scope 외부) globalVar : ${globalVar}`);
+        //document.write(`(block scope 외부) globalVar : ${globalVar} , (block scope 내부) blockVar : ${blockVar}`);
+    </script>
+</body> 
+</html>

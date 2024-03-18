@@ -1,0 +1,23 @@
+.Header {
+    text-align : center;
+}
+
+.nav {
+    border : 5px solid #36c1ae;
+    box-sizing: content-box;
+    padding : 15px;
+    margin-bottom: 5%;
+}
+
+.control {
+    border : 5px solid #36c1ae;
+    box-sizing: content-box;
+    padding : 15px;
+    margin-bottom: 5%;
+}
+
+.article {
+    border : 5px solid #36c1ae;
+    box-sizing: content-box;
+    padding : 15px;
+}

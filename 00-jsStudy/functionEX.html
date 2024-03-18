@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> 1. 함수(function) </h2>
+    <script>
+        //함수 선정
+        function add(a,b) {
+            return (a + b);
+        }
+        let result = add(100, 200); //함수 호출 및 실행
+        document.write(`add(100,200) = ${result} <br>`);
+        //함수 선언 시에, 함수명이 없어 함수 선언 가능(anonymous function)
+        const multiply = function(a,b) {
+            return (a * b);
+        }
+        result = multiply(100, 200);
+        document.write(`multiply(100, 200) = ${result} <br>`);
+
+        //default parameter
+        const multiply1 = function(a, b=200) {
+            return (a*b);
+        }
+        result = multiply1(200, 400);
+        document.write(`multiply1 (200, 400) = ${result} <br>`);
+        result = multiply1(200);
+        document.write(`multiply1 (200, 400) = ${result} <br>`);
+    </script>
+
+    <h2> 2. Rest Parameter </h2>
+    <script>
+        function printAll(...args) {
+            for(let i=0 ; i<args.length; i++) {
+                document.write(`index ${i} : ${args[i]} <br>`);
+            }
+        }
+
+        printAll('hong1', 'hong2', 'hong3', 'hong4', 25);
+
+    </script>
+
+    <h2> 3. arrow function (화살표 함수) </h2>
+    <script>
+        function helloPrint() {
+            document.write(`hello JS <br>`);
+        }
+        helloPrint();
+        //helloPrint() 를 화살표 함수로 변환하면,
+        const helloPrint1 = () => {
+            document.write(`(화살표함수1) hello JS <br>`);
+        }
+        helloPrint1();
+        //함수의 실행문이 한 줄이면, {} 생략 가능
+        const helloPrint2 = () => document.write(`(화살표함수2) hello JS <br>`);
+        helloPrint2();
+        
+        function subtractor1(a, b) {
+            return (a-b);
+        }
+        result = subtractor1 (10, 20);
+        document.write(`(화살표 함수3) subtractor(10,20)=${result} <br>`);
+
+        subtractor2 = (a, b) => (a-b);
+        result = subtractor2 (10, 20);
+        document.write(`(화살표 함수4)subtractor(10,20)=${result} <br>`);
+        //인자가 1개인 경우
+        const printAge = age => {
+            document.write(`(화살표 함수5)age : ${age}`);
+        }
+        printAge(20);
+        const printAge1 = age => document.write(`(화살표  함수6)age : ${age} <br>`)
+        printAge1(100);
+    </script>
+
+    <h2> 4. 콜백 함수(callback function) </h2>
+    <script>
+        //콜백함수를 이용하여 함수 선언
+        const addCallback = (a, b, callback) => {
+            let result = a + b;
+            callback(result);
+        }
+
+        addCallback(100, 200, (result)=>  {
+            document.write(`addCallback(100,200) = ${result} <br>`);
+        });
+
+        addCallback(100, 200, result=> 
+            document.write(`addCallback1(100,200)=${result}<br>`)
+        );
+
+        //이름을 입력받아서, 콜백 함수로 출력하는 함수를 선언하고,
+        //실행 결과를 보여주세요..
+        const printName = (a, callback) => {
+            let result = "이름은 " + a + "입니다.";
+            callback(result);
+        }
+
+        //함수 호출, 결과 출력
+        printName(`김지윤`, (name) => {
+            document.write(`printName(이름)=${name}`)
+        })
+    </script>
+</body>
+</html>

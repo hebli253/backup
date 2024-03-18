@@ -1,0 +1,104 @@
+{
+  "days": [
+    {
+      "day": 1,
+      "id": 1
+    },
+    {
+      "day": 2,
+      "id": 2
+    },
+    {
+      "day": 3,
+      "id": 3
+    },
+    {
+      "day": 4,
+      "id": 4
+    },
+    {
+      "day": 5,
+      "id": 5
+    },
+    {
+      "day": 6,
+      "id": 6
+    },
+    {
+      "day": 7,
+      "id": 7
+    }
+  ],
+  "words": [
+    {
+      "id": 1,
+      "day": 1,
+      "eng": "book",
+      "kor": "책",
+      "isDone": true
+    },
+    {
+      "id": 2,
+      "day": 1,
+      "eng": "school",
+      "kor": "학교",
+      "isDone": false
+    },
+    {
+      "id": 4,
+      "day": 3,
+      "eng": "homework",
+      "kor": "숙제",
+      "isDone": false
+    },
+    {
+      "day": "3",
+      "eng": "revolution",
+      "kor": "혁명",
+      "isDone": false,
+      "id": 5
+    },
+    {
+      "day": "1",
+      "eng": "integrate",
+      "kor": "통합시키다",
+      "isDone": false,
+      "id": 6
+    },
+    {
+      "day": "2",
+      "eng": "psycho",
+      "kor": "정신병자",
+      "isDone": false,
+      "id": 7
+    },
+    {
+      "day": "2",
+      "eng": "physical",
+      "kor": "육체적인",
+      "isDone": false,
+      "id": 8
+    },
+    {
+      "day": "2",
+      "eng": "psychology",
+      "kor": "심리학",
+      "isDone": false,
+      "id": 9
+    },
+    {
+      "day": "3",
+      "eng": "house",
+      "kor": "집",
+      "isDone": false,
+      "id": 10
+    },
+    {
+      "day": "3",
+      "eng": "computer",
+      "kor": "컴퓨터",
+      "isDone": false,
+      "id": 11
+    }
+  ]
+}
